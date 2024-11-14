@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apprentissage de l'anglais et de la cuisine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Connexion</a></li>
+                <li><a href="#">Recettes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h1>Bienvenue sur notre application d'apprentissage de l'anglais et de la cuisine !</h1>
+            <p>Découvrez nos recettes et jeux pour apprendre l'anglais tout en cuisinant.</p>
+            <button onclick="window.location.href='#connexion';">Se connecter</button>
+        </section>
+        <section id="connexion">
+            <h2>Connexion</h2>
+            <form action="/login" method="post">
+                <label for="username">Nom d'utilisateur :</label>
+                <input type="text" id="username" name="username"><br>
+                <label for="password">Mot de passe :</label>
+                <input type="password" id="password" name="password"><br>
+                <input type="submit" value="Se connecter">
+            </form>
+        </section>
+        <section id="recettes">
+            <h2>Recettes</h2>
+            <ul>
+                <li><a href="#recette1">Recette 1</a></li>
+                <li><a href="#recette2">Recette 2</a></li>
+                <li><a href="#recette3">Recette 3</a></li>
+            </ul>
+        </section>
+        <section id="recette1">
+            <h3>Recette 1</h3>
+            <p>Instructions de préparation de la recette 1.</p>
+            <button onclick="window.location.href='#jeu1';">Lancer le jeu</button>
+        </section>
+        <section id="recette2">
+            <h3>Recette 2</h3>
+            <p>Instructions de préparation de la recette 2.</p>
+            <button onclick="window.location.href='#jeu2';">Lancer le jeu</button>
+        </section>
+        <section id="recette3">
+            <h3>Recette 3</h3>
+            <p>Instructions de préparation de la recette 3.</p>
+            <button onclick="window.location.href='#jeu3';">Lancer le jeu</button>
+        </section>
+        <section id="jeu1">
+            <h4>Jeu 1</h4>
+            <p>Trouvez les mots manquants pour compléter la phrase suivante : "Je vais au supermarché pour acheter des __________."</p>
+            <input type="text" id="mot1" name="mot1"><br>
+            <input type="text" id="mot2" name="mot2"><br>
+            <input type="text" id="mot3" name="mot3"><br>
+            <button onclick="verifier();">Vérifier</button>
+        </section>
+        <section id="jeu2">
+            <h4>Jeu 2</h4>
+            <p>Trouvez les mots manquants pour compléter la phrase suivante : "Je suis allé au parc avec mes amis et nous avons mangé des __________."</p>
+            <input type="text" id="mot1" name="mot1"><br>
+            <input type="text" id="mot2" name="mot2"><br>
+            <input type="text" id="mot3" name="mot3"><br>
+            <button onclick="verifier();">Vérifier</button>
+        </section>
+        <section id="jeu3">
+            <h4>Jeu 3</h4>
+            <p>Trouvez les mots manquants pour compléter la phrase suivante : "Je suis allé au restaurant avec ma famille et nous avons commandé des __________."</p>
+            <input type="text" id="mot1" name="mot1"><br>
+            <input type="text" id="mot2" name="mot2"><br>
+            <input type="text" id="mot3" name="mot3"><br>
+            <button onclick="verifier();">Vérifier</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
